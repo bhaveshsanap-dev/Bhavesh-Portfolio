@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink-50 text-ink-800 font-sans antialiased;
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    @apply bg-terracotta text-white;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-terracotta;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-10 lg:px-16;
+  }
+
+  .section-label {
+    @apply font-mono text-xs uppercase tracking-[0.18em] text-ink-500;
+  }
+
+  .heading-xl {
+    @apply text-3xl md:text-5xl lg:text-6xl font-semibold tracking-tighter2 leading-[1.1];
+  }
+
+  .heading-lg {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tightish leading-[1.15];
+  }
+
+  .heading-md {
+    @apply text-xl md:text-2xl font-semibold tracking-tightish leading-[1.2];
+  }
+
+  .body-lg {
+    @apply text-lg md:text-xl text-ink-600 leading-[1.6] font-normal;
+  }
+
+  .body-base {
+    @apply text-base text-ink-600 leading-[1.65];
+  }
+
+  .body-sm {
+    @apply text-sm text-ink-500 leading-[1.6];
+  }
+
+  .tag {
+    @apply inline-flex items-center font-mono text-xs text-ink-600 border border-ink-200 px-3 py-1.5 transition-colors duration-200 hover:border-terracotta hover:text-ink-800;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-terracotta text-white font-medium text-sm px-6 py-3 transition-colors duration-200 hover:bg-terracotta-dark focus-visible:outline-terracotta;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-ink-800 font-medium text-sm px-6 py-3 border border-ink-300 transition-colors duration-200 hover:border-ink-900 hover:bg-ink-100 focus-visible:outline-terracotta;
+  }
+
+  .link-underline {
+    @apply relative text-ink-800 underline-offset-[3px] decoration-ink-300 hover:decoration-ink-800 transition-colors duration-200;
+  }
+
+  .placeholder-link {
+    @apply text-ink-400 border-b border-dashed border-ink-300 cursor-default;
+  }
+}
