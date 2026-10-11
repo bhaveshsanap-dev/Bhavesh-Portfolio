@@ -1,4 +1,4 @@
-# Bhavesh — Personal Developer Portfolio
+git add README.md# Bhavesh — Personal Developer Portfolio
 
 A premium-minimal, editorial-style portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 

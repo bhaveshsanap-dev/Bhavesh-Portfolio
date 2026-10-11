@@ -7,8 +7,8 @@
 export const profile = {
   name: "Bhavesh",
   monogram: "𝕭𝖍𝖆𝖛𝖊𝖘𝖍",
-  role: "Aspiring Software Developer",
-  label: "BCA Student · Aspiring Software Developer",
+  role: "BCA Student | Software Development Enthusiast",
+  label: "BCA Student · Software Development Enthusiast",
   location: "Pune, Maharashtra, India",
   heroHeading: "Learning to build.\nBuilding to improve.",
   heroIntro:
@@ -18,8 +18,8 @@ export const profile = {
   contactIntro:
     "I'm open to software development internships, collaborative projects, and opportunities to learn through real-world work.",
   /** Set these to real URLs/addresses when ready. Empty strings render editable placeholders. */
-  email: "",
-  github: "",
+  email: "bhaveshsanap.work@gmail.com",
+  github: "https://github.com/bhaveshsanap-dev",
   linkedin: "",
 };
 
