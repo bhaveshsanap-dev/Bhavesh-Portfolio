@@ -9,7 +9,7 @@ export const profile = {
   monogram: "𝕭𝖍𝖆𝖛𝖊𝖘𝖍",
   role: "BCA Student | Software Development Enthusiast",
   label: "BCA Student · Software Development Enthusiast",
-  location: "Pune, Maharashtra, India",
+  location: "Amravati, Maharashtra, India",
   heroHeading: "Learning to build.\nBuilding to improve.",
   heroIntro:
     "I'm Bhavesh, a BCA student interested in programming, backend development, and creating useful software. I enjoy learning by building things, experimenting with code, and understanding how applications work behind the scenes.",
